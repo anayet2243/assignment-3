@@ -14,3 +14,11 @@ body{
 .course-head-color{
     color: #4A4A4A;
 }
+.explore-headign-px{
+    max-width: 606px;
+    margin-top: 6rem;
+}
+.rate-w{
+    height: 90px;
+    width: auto;
+}
