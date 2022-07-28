@@ -81,8 +81,8 @@
             <div class="carousel-caption d-flex flex-column justify-content-center h-100 px-5" style="top: 0">
               <div>
                 <h1>Get Started Digital Learning</h1>
-                <p class="slider-text-color">It is a long established fact that a reader will be distracted by the
-                  readable content of a page when looking at its layout</p>
+                <p class="slider-text-color d-none d-lg-block d-md-block d-sm-none">It is a long established fact that a
+                  reader will be distracted by the readable content of a page when looking at its layout</p>
                 <button class="btn btn-primary fw-bolder px-lg-5 py-lg-3 px-2 py-1 px-md-3 py-md-2">Get Started</button>
               </div>
             </div>
@@ -91,8 +91,9 @@
             <img src="images/cover/cover-2.jpg" class="d-block w-100 opacity-50" alt="...">
             <div class="carousel-caption d-flex flex-column justify-content-center h-100 px-5" style="top: 0">
               <div>
-                <h1 class="display-2">Get Started Digital Learning</h1>
-                <p class="common-text-color">It is a long established fact that a reader will be distracted by the
+                <h1>Get Started Digital Learning</h1>
+                <p class="slider-text-color d-none d-lg-block d-md-block d-sm-none">It is a long established fact that a
+                  reader will be distracted by the
                   readable content of a page when looking at its layout</p>
                 <button class="btn btn-primary fw-bolder px-lg-5 py-lg-3 px-2 py-1 px-md-3 py-md-2">Get Started</button>
               </div>
@@ -102,8 +103,9 @@
             <img src="images/cover/cover-3.jpg" class="d-block w-100 opacity-50" alt="...">
             <div class="carousel-caption d-flex flex-column justify-content-center h-100 px-5" style="top: 0">
               <div>
-                <h1 class="display-2">Get Started Digital Learning</h1>
-                <p class="common-text-color">It is a long established fact that a reader will be distracted by the
+                <h1>Get Started Digital Learning</h1>
+                <p class="slider-text-color d-none d-lg-block d-md-block d-sm-none">It is a long established fact that a
+                  reader will be distracted by the
                   readable content of a page when looking at its layout</p>
                 <button class="btn btn-primary fw-bolder px-lg-5 py-lg-3 px-2 py-1 px-md-3 py-md-2">Get Started</button>
               </div>
@@ -301,6 +303,54 @@
     </section>
     <!-- register sec  -->
     <section>
+      
+
+      <!-- modal start -->
+      <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalToggleLabel">Registration Form</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- modal form start  -->
+              <form class="align-items-center">
+                <div>
+                  <label class="fw-bold" for="inlineFormInputGroupUsername">E-mail</label>
+                  <div class="input-group">
+                    <input type="email" class="form-control" id="inlineFormInputGroupUsername" placeholder="Drop Your E-mail">
+                  </div>
+                </div>
+                <br>
+                <div>
+                  <label  class="fw-bold" for="inlineFormSelectPref">Courses</label>
+                  <select class="form-select" id="inlineFormSelectPref">
+                    <option selected>Choose One</option>
+                    <option value="1">Web Development</option>
+                    <option value="2">UX/UI Design</option>
+                    <option value="3">Motion Graphics</option>
+                  </select>
+                </div>
+              <br>
+                <div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                    <label class="form-check-label" for="inlineFormCheck">
+                      Remember me
+                    </label>
+                  </div>
+                </div>
+              </form>
+              <!-- modal form end  -->
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Submit Here</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- register sec start -->
       <div class="container bg-primary rounded rounded-2 mt-5">
         <div class="d-flex justify-content-center ">
           <div>
@@ -316,9 +366,9 @@
               <div
                 class="col-lg-6 col-md-12 col-12 col-sm-12 d-flex justify-content-lg-end justify-content-sm-center justify-content-md-center justify-content-center align-items-center">
                 <div>
-                  <a href="#">
+                  <a href="#exampleModalToggle">
                     <button
-                      class="btn btn-light text-primary fw-bold fw-bolder px-lg-5 py-lg-3 px-2 py-1 px-md-3 py-md-2">Register
+                      class="btn btn-light text-primary fw-bold fw-bolder px-lg-5 py-lg-3 px-2 py-1 px-md-3 py-md-2" data-bs-toggle="modal" href="#exampleModalToggle" role="button" id="exampleModalToggle">Register
                       Now</button>
                   </a>
                 </div>
@@ -327,6 +377,9 @@
           </div>
         </div>
       </div>
+     <!-- register sec start -->
+
+      <!-- modal end -->
     </section>
     <!-- successful student -->
     <section>
@@ -476,7 +529,8 @@
         <div class=" text-center" style="width: 40rem;">
           <div class="card-body">
             <h1 class="card-title mb-3">Frequently Asked Questions</h1>
-            <p class="common-text-color">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+            <p class="common-text-color">It is a long established fact that a reader will be distracted by the readable
+              content of a page when looking at its layout</p>
           </div>
         </div>
       </div>
@@ -487,60 +541,89 @@
           <!-- accordian item 1 -->
           <div class="accordion-item">
             <h2 class="accordion-header course-head-color" id="headingOne">
-              <button class="accordion-button course-head-color" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <button class="accordion-button course-head-color" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 What are the differences between flexbox and css grid?
               </button>
             </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <p class="common-text-color">The basic difference between CSS Grid Layout and CSS Flexbox Layout is that flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns at the same time. The two specifications share some common features, however, and if you have already learned how to use flexbox, the similarities should help you get to grips with Grid.
-  
+                <p class="common-text-color">The basic difference between CSS Grid Layout and CSS Flexbox Layout is that
+                  flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for
+                  two-dimensional layout - rows, and columns at the same time. The two specifications share some common
+                  features, however, and if you have already learned how to use flexbox, the similarities should help
+                  you get to grips with Grid.
+
                 </p>
               </div>
             </div>
           </div>
-  
+
           <!-- accordian item 2 -->
-  
+
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed course-head-color" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <button class="accordion-button collapsed course-head-color" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 what are the difference between bootstrap and tailwind css?
               </button>
             </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <p class="common-text-color">Bootstrap was developed by Mark Otto and Jacob Thorton during an internal competition at Twitter in August 2011. It is an open-source framework that is used to design responsive websites better, faster, and easier. It is a beginner-friendly and the most popular open-source framework that includes HTML, CSS, and JavaScript. Bootstrap can be used to create web applications with any server-side Technology like Java, PHP, etc., and its responsive design allows platforms like Mobile phones, tablets, and computers. Bootstrap contains CSS and JavaScript-based design templates for typography, forms, buttons, navigation, icons, and other interface components. It is based on object-oriented CSS. Bootstrap helps to design and develop website templates quickly.</p>
+                <p class="common-text-color">Bootstrap was developed by Mark Otto and Jacob Thorton during an internal
+                  competition at Twitter in August 2011. It is an open-source framework that is used to design
+                  responsive websites better, faster, and easier. It is a beginner-friendly and the most popular
+                  open-source framework that includes HTML, CSS, and JavaScript. Bootstrap can be used to create web
+                  applications with any server-side Technology like Java, PHP, etc., and its responsive design allows
+                  platforms like Mobile phones, tablets, and computers. Bootstrap contains CSS and JavaScript-based
+                  design templates for typography, forms, buttons, navigation, icons, and other interface components. It
+                  is based on object-oriented CSS. Bootstrap helps to design and develop website templates quickly.</p>
               </div>
             </div>
           </div>
           <!-- accordian item 3 -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed course-head-color" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <button class="accordion-button collapsed course-head-color" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 what is css box model
               </button>
             </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <p class="common-text-color">When laying out a document, the browser's rendering engine represents each element as a rectangular box according to the standard CSS basic box model. CSS determines the size, position, and properties (color, background, border size, etc.) of these boxes. Every box is composed of four parts (or areas), defined by their respective edges: the content edge, padding edge, border edge, and margin edge.
-                  
-                  </p>
+                <p class="common-text-color">When laying out a document, the browser's rendering engine represents each
+                  element as a rectangular box according to the standard CSS basic box model. CSS determines the size,
+                  position, and properties (color, background, border size, etc.) of these boxes. Every box is composed
+                  of four parts (or areas), defined by their respective edges: the content edge, padding edge, border
+                  edge, and margin edge.
+
+                </p>
               </div>
             </div>
           </div>
           <!-- accordian item 4 -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingFour">
-              <button class="accordion-button collapsed course-head-color" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <button class="accordion-button collapsed course-head-color" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 what is html semantic tags?
               </button>
             </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <p class="common-text-color">HTML was originally created as a markup language to describe documents on the early internet. As the internet grew and was adopted by more people, its needs changed. Where the internet was originally intended for sharing scientific documents, now people wanted to share other things as well. Very quickly, people started wanting to make the web look nicer. Because the web was not initially built to be designed, programmers used different hacks to get things laid out in different ways. Rather than using the to describe information using a table, programmers would use them to position other elements on a page.
-                  
-                  </p>
+                <p class="common-text-color">HTML was originally created as a markup language to describe documents on
+                  the early internet. As the internet grew and was adopted by more people, its needs changed. Where the
+                  internet was originally intended for sharing scientific documents, now people wanted to share other
+                  things as well. Very quickly, people started wanting to make the web look nicer. Because the web was
+                  not initially built to be designed, programmers used different hacks to get things laid out in
+                  different ways. Rather than using the to describe information using a table, programmers would use
+                  them to position other elements on a page.
+
+                </p>
               </div>
             </div>
           </div>
@@ -572,17 +655,18 @@
                  main section end 
           ----------------------- -->
 
-      <!-- footer  -->
-    <footer class="container bg-dark text-white text-center py-5">
-      <div>
-        <h2>Udamy It Institute</h2>
-        <p class="common-text-color">Office 41, Zawaya Buildin, <br> Ghala Muscat, Sultanate of Oman <br> Privacy Ploicy | Terms of use</p>
-        <i class="fa-brands fa-facebook-f"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-linkedin-in"></i>
-        <i class="fa-brands fa-google"></i>
+  <!-- footer  -->
+  <footer class="container bg-dark text-white text-center py-5">
+    <div>
+      <h2>Udamy It Institute</h2>
+      <p class="common-text-color">Office 41, Zawaya Buildin, <br> Ghala Muscat, Sultanate of Oman <br> Privacy Ploicy |
+        Terms of use</p>
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-linkedin-in"></i>
+      <i class="fa-brands fa-google"></i>
     </div>
-    </footer>
+  </footer>
   <!-- bootstrap js CDN -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
