@@ -22,4 +22,15 @@ body{
     height: 90px;
     width: auto;
 }
+.fa-star{
+    color: gold;
+}
+#fw-bg{
+    background-color: greenyellow;
+}
+.fa-brands{
+    background-color: #242424;
+    padding: 14px;
+    border-radius: 50%;
+}
 
