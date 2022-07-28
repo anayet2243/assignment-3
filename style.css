@@ -2,9 +2,15 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
-.common-text-color{
+.slider-text-color{
     color: #f4f4f4;
+}
+.common-text-color{
+    color: #797979;
 }
 .common-text-size{
     font-size: 18px;
+}
+.course-head-color{
+    color: #4A4A4A;
 }
